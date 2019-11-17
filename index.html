@@ -1,15 +1,22 @@
 <html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title><link rel="stylesheet" href="audioplayer.css">
-        <link rel="stylesheet" href="sound.css">
-    </head><meta name="viewport" content="width=device-width, initial-scale=1.0"><body>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script src="sound.js"></script><script  src="audioplayer.js"></script>
+        <title></title><link rel="stylesheet" href="./audioplayer.css">
+        <link rel="stylesheet" href="./sound.css">
+    </head><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'><meta name="viewport" content="width=device-width, initial-scale=1.0"><body>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./audioplayer.js"></script><script src="sound.js"></script>
 
-    <div class="wrapaudio">
-<audio autoplay loop>
-	<source src="3_wind.mp3" type="audio/mpeg">
-</audio></div>
+<audio loop preload="auto">
+	<source src="./3_wind.mp3"></source>
+	Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+	<button data-am-button="large" id="btn-play-pause"><i class="fa fa-play"></i></button>
+
+	<div id="progress-bar"><span id="progress"></span></div>
+</div>
+
 
   <div class="wrap2 title">Sound Carried by the Wind</div>
 
