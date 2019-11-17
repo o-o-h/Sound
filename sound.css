@@ -5,7 +5,7 @@ font-family: itc-benguiat, serif;
 font-weight: 400;
 margin:0;padding:0;
     background-color:#94786C;color:#88aacd;
-    overflow:hidden;}
+    overflow:hidden;width:100%;height:100%;}
 
 
 
@@ -19,12 +19,10 @@ audio {
 
 
 
-
 .wrap{position:fixed;width:100%;height:100%;top:0;left:0;}
 .wrap2 {position:relative;}
-.wrapaudio{z-index: 500;height:5%;position:fixed;bottom:2%;width:100%;left:25%}
 .title{font-size:3em;text-align:center;top:10px;width:100%;height:auto;z-index:2;}
-.rsvg {height:100%;z-index:1;bottom:0;}
+.rsvg {height:100%;width:auto;z-index:1;position:relative;}
 
 .othertracks {position:fixed;font-size:1.3em;text-align:center;right:-23%;top:50%;width:50%;height:auto;z-index: 3;transform: rotate(90deg)}
 
@@ -91,6 +89,9 @@ a:hover {text-decoration: underline;color:#88aacd;}
 @media only screen and (max-width:600px){.title{font-size:2em;}
     .oval{width:30%; height:22%;}
 .othertracks {position:fixed;font-size:1em;top:50%;right:-45%;width:100%;z-index:3;transform: rotate(90deg);}
+
+.rsvg svg{height:100%;width:auto;}
+    .rsvg {left:-50%}
 }
 
 
